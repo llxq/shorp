@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+a,
+a:hover,
+a:link,
+a:active,
+a:focus {
+    color: #aaa;
+    text-decoration: none;
+}
+
+/* 最前面的信息 */
+
+.top>.top-info>.userInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 150px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.top>.top-info>.userInfo>ul>li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.top>.top-info>.userInfo>ul {
+    transform: translateX(-1000px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 4s ease;
+}
+
+.top>.top-info>.userInfo>ul>li>i {
+    margin-right: 10px;
+    color: #aaa;
+}
+
+.top>.top-info>.userInfo>.search {
+    width: 400px;
+    height: 35px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    transform: translateX(1000px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 4s ease;
+}
+
+.top>.top-info>.userInfo>.moveRight {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.top>.top-info>.userInfo>.search>i {
+    font-style: normal;
+    font-size: 14px;
+    color: #aaa;
+    flex: 4%;
+}
+
+.top>.top-info>.userInfo>.search input {
+    border: none;
+    outline: none;
+    background-color: #eee;
+    flex: 80%;
+    height: 100%;
+    border-radius: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.top>.top-info>.userInfo>.search input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.top>.top-info>.userInfo>.search .btn {
+    height: 100%;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    outline: none;
+}
+
+/* tabbar项 */
+
+.top>.top-tabbar {
+    padding: 15px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top>.top-tabbar>.title h1 {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transform: scale(.1);
+    transition: all 1.5s ease;
+}
+
+.top>.top-tabbar>.title h1 a {
+    color: #000000;
+    font-size: 1.5em;
+}
+
+.top>.top-tabbar>.title h1 span {
+    font-size: 12px;
+    letter-spacing: 12px;
+    margin-top: -8px;
+    margin-left: 2px;
+    color: #666;
+}
+
+.top>.top-tabbar>.tabbar>ul {
+    padding: 15px 0 0 0;
+}
+
+.top>.top-tabbar>.tabbar>ul li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 60px;
+}
+
+.top>.top-tabbar>.tabbar>ul li a {
+    font-size: 18px;
+    color: #666;
+}
+
+.top>.top-tabbar>.tabbar>ul li a:hover {
+    color: brown;
+}
+
+/* 点击的时候的样式 */
+
+.top>.top-tabbar>.tabbar>ul li .active {
+    color: brown;
+}
+
+.top>.top-tabbar>.shorpcar {
+    color: brown;
+    padding: 20px 0 0 0;
+}
+
+.top>.top-tabbar>.shorpcar p {
+    text-align: center;
+}
+
+.top>.top-tabbar>.shorpcar p a {
+    color: brown;
+}
