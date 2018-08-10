@@ -5,11 +5,16 @@
 }
 
 .show-goods-body,
-.goods-show-body,
+.goods-show-body > .goods-list-container,
+.goods-particular-body,
 .goods-particular-body {
     overflow: hidden;
+    max-width: 1350px;
+    margin: auto;
 }
-
+.goods-show-body {
+    background-color: rgba(0, 0, 0, 0.03);
+}
 .shorp-body>.shorp-container {
     width: 100%;
     height: 700px;
@@ -29,12 +34,14 @@
 
 .shorp-body>.shorp-container>.logo {
     display: flex;
+    width: 50%;
+    margin-left: 20%;
+    justify-content: flex-end;
 }
 
 .shorp-body>.shorp-container>.logo h3 {
     font-size: 3em;
     color: #fff;
-    padding: 0 0 0 17em;
     font-weight: 300;
     font-family: "Lato", sans-serif;
     height: 180px;
@@ -66,7 +73,7 @@
 }
 
 .shorp-body>.shorp-container>.carousel-container {
-    padding-left: 150px;
+    margin-left: 10%;
 }
 
 .shorp-body>.shorp-container>.carousel-container>.carousel-text {
@@ -198,8 +205,9 @@
 }
 
 .show-goods-body>.show-goods>.show-middle>.top {
-    height: 48%;
     width: 100%;
+    flex: 1;
+    margin-bottom: 2%;
     position: relative;
     overflow: hidden;
 }
@@ -215,8 +223,11 @@
 }
 
 .show-goods-body>.show-goods>.show-middle>.bottom {
-    height: 48%;
+    /* height: 50%; */
     width: 100%;
+    flex: 1;
+    margin-top: 2%;
+    /* padding: 2% 0 0 0; */
     position: relative;
     overflow: hidden;
 }
@@ -284,8 +295,6 @@
 }
 
 .goods-show-body>.goods-list-container {
-    /* height: 700px; */
-    background-color: rgba(0, 0, 0, 0.03);
     padding: 80px 100px;
     opacity: 0;
     transition: opacity 1s ease;
@@ -330,6 +339,10 @@
     color: #aaa;
 }
 
+.goods-show-body>.goods-list-container>.goods-list {
+    /* background-color: red; */
+}
+
 .goods-show-body>.goods-list-container>.goods-list>.top {
     transform: translateY(1200px);
     transition: transform 1.5s ease;
@@ -338,11 +351,12 @@
 .goods-show-body>.goods-list-container>.goods-list .middle {
     transform: translateY(1200px);
     transition: transform 1.5s ease;
+    padding: 0 15px;
 }
 
 .goods-show-body>.goods-list-container>.goods-list>.row img {
     width: 100%;
-    height: 320px;
+    min-height: 350px;
 }
 
 .goods-show-body>.goods-list-container>.goods-list>.row .thumbnail {
@@ -588,15 +602,18 @@
 .goods-particular-body>.goods-particular-middle {
     padding: 100px 0 0 0;
 }
-.goods-particular-body>.goods-particular-middle > .top {
+
+.goods-particular-body>.goods-particular-middle>.top {
     position: relative;
+    overflow: hidden;
 }
-.goods-particular-body>.goods-particular-middle > .top img {
+
+.goods-particular-body>.goods-particular-middle>.top img {
     width: 100%;
     height: 100%;
 }
 
-.goods-particular-body>.goods-particular-middle > .top > .text-contaniner {
+.goods-particular-body>.goods-particular-middle>.top>.text-contaniner {
     position: absolute;
     z-index: 1000;
     top: 25%;
@@ -610,15 +627,17 @@
     transform: translateX(-1000px);
     transition: transform 1.5s ease;
 }
-.goods-particular-body>.goods-particular-middle > .top > .text-contaniner h4 {
+
+.goods-particular-body>.goods-particular-middle>.top>.text-contaniner h4 {
     font-size: 4em;
 }
-.goods-particular-body>.goods-particular-middle > .top > .text-contaniner p {
+
+.goods-particular-body>.goods-particular-middle>.top>.text-contaniner p {
     font-size: 3.5em;
     color: #000;
 }
 
-.goods-particular-body>.goods-particular-middle > .middle {
+.goods-particular-body>.goods-particular-middle>.middle {
     padding: 30px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.03);
@@ -626,13 +645,14 @@
     transition: transform 1.5s ease;
 }
 
-.goods-particular-body>.goods-particular-middle > .middle h3 {
+.goods-particular-body>.goods-particular-middle>.middle h3 {
     font-size: 2.5em;
 }
 
-.goods-particular-body>.goods-particular-middle > .middle p {
+.goods-particular-body>.goods-particular-middle>.middle p {
     color: #aaa;
 }
+
 #email-send {
     display: inline-flex;
     justify-content: center;
@@ -642,19 +662,20 @@
     position: relative;
 }
 
-#email-send > .email {
+#email-send>.email {
     width: 30em;
     border: none;
     background-color: transparent;
     outline: none
 }
-#email-send > span {
+
+#email-send>span {
     font-size: 1.5em;
     color: #ffc229;
     padding-right: 15px;
 }
 
-#email-send > .buy-shade {
+#email-send>.buy-shade {
     padding: 2% 4%;
     position: absolute;
     left: 110%;

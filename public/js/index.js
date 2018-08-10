@@ -126,19 +126,6 @@ $(() => {
             $(".goods-particular-body>.goods-particular-top>.right").css("transform", "translateX(0)");
         }
 
-        if (comprareTop($(".footer-container").offset().top - 200)) {
-            $(".footer-container").css("opacity", "1");
-            $(".footer-container>.footer-top").css({
-                "transform": "translate(0)"
-            });
-            $(".footer-container>.footer-middle").css({
-                "transform": "scale(1)"
-            });
-            $(".footer-container>.footer-bottom").css({
-                "transform": "scale(1)"
-            });
-        }
-
         if (comprareTop($(".goods-particular-body>.goods-particular-middle > .top > .text-contaniner").offset().top - 200)) {
             $(".goods-particular-body>.goods-particular-middle > .top > .text-contaniner").css("transform", "translateX(0)")
         }

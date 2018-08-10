@@ -15,14 +15,20 @@ a:focus {
 }
 
 /* 最前面的信息 */
+
 .top {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.top>.top-info {
     overflow: hidden;
 }
 
 .top>.top-info>.userInfo {
     display: flex;
     justify-content: space-between;
-    padding: 30px 150px;
+    padding: 30px 0;
     align-items: center;
     border-bottom: 1px solid #ccc;
 }
@@ -100,7 +106,7 @@ a:focus {
 /* tabbar项 */
 
 .top>.top-tabbar {
-    padding: 15px 150px;
+    padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,7 +140,39 @@ a:focus {
     padding: 15px 0 0 0;
 }
 
-.top>.top-tabbar>.tabbar>ul li {
+.top>.top-tabbar>.tabbar>ul .dropdown-menu {
+    background-color: #fff;
+    width: 650px;
+}
+
+.top>.top-tabbar>.tabbar>ul .dropdown-menu>div {
+    padding: 20px 20px 20px 40px;
+}
+
+.top>.top-tabbar>.tabbar>ul .dropdown-menu>div>ul>li a {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.top>.top-tabbar>.tabbar>ul .dropdown-menu>div>ul> h4 {
+    color: #000;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #aaa;
+}
+
+.top>.top-tabbar>.tabbar>ul .dropdown-menu>div>ul>li {
+    font-size: 12px;
+    margin: 8px 0;
+    margin-right: 100px
+}
+
+.top>.top-tabbar>.tabbar>ul .dropdown-menu>.pop-up {
+    float: left;
+}
+
+.top>.top-tabbar>.tabbar>ul>li {
     float: left;
     list-style: none;
     margin: 0;
