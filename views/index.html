@@ -1,14 +1,363 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
-
-<body>
-    {{ include './header.html' }}
-</body>
-
-</html>
+{{ extend "./_layouts/home.html" }} {{ block "head" }}
+<link rel="stylesheet" href="./public/css/header.css">
+<link rel="stylesheet" href="./public/css/footer.css">
+<link rel="stylesheet" href="./public/css/index.css"> {{ /block }} {{ block "body" }}
+<!-- logo区域 -->
+<section class="shorp-body">
+    <div class="shorp-container">
+        <h3>Free Online Shopping</h3>
+        <div class="logo">
+            <h3>Up to</h3>
+            <div class="logo-gif">
+                <span>50%</span>
+                <i>off/-</i>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-text">
+                <p class="carousel-info">T-Shirts + Formal Pants + Jewellery + Cosmetics</p>
+                <p>Toys + Furniture + Lighting + Watches</p>
+                <p>Tops + Books & Media + Sports</p>
+            </div>
+            <div class="carousel-logo">
+                <ul id="carousel-pattern">
+                    <li class="carousel-active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 样品展示区域 -->
+<section class="show-goods-body">
+    <div class="show-goods">
+        <div class="show-left magnify">
+            <div class="lid">
+                <p>Cupidatat non proident, sunt</p>
+                <p>Officia deserunt mollit anim</p>
+                <p>Laboris nisi ut aliquip consequat</p>
+            </div>
+            <img src="./public/images/15.jpg" alt="衣服样品">
+            <h3>Best
+                <span class="Store">Store</span>
+            </h3>
+            <p>IN ONLINE SHOPPING</p>
+        </div>
+        <div class="show-middle">
+            <div class="top magnify">
+                <img src="./public/images/16.jpg" alt="衣服样品">
+                <h3>Discount
+                    <span>45%</span>
+                </h3>
+            </div>
+            <div class="bottom magnify">
+                <img src="./public/images/17.jpg" alt="衣服样品">
+                <div class="outside">
+                    <div class="interior">
+                        <h3>Latest New </h3>
+                        <h4>Collections</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-right magnify">
+            <img src="./public/images/18.jpg" alt="衣服样品">
+            <h3>Top And Classic Designs</h3>
+            <h4>2016 Collection</h4>
+        </div>
+    </div>
+</section>
+<!-- 购买物品展示区域 -->
+<section class="goods-show-body">
+    <div class="goods-list-container">
+        <div class="goods-logo">
+            <h2>New Collections</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="goods-list">
+            <div class="row top">
+                <div class="col-sm-5 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/1.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Formal Shirt</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$325</span>
+                                <span class="price-new">$250</span>
+                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade">
+                                <a href="#">Add To Car</a>
+                            </button>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/2.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Dining Table</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$580</span>
+                                <span class="price-new">$550</span>
+                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                            </p>
+                            <p class="new">
+                                <span>new</span>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade big">
+                                <a href="#">Add To Car</a>
+                            </button>
+                            <div class="star big-star">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/3.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Pearl & Stone Anklet</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$180</span>
+                                <span class="price-new">$120</span>
+                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade">
+                                <a href="#">Add To Car</a>
+                            </button>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row middle">
+                <div class="col-sm-5 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/4.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Running Shoes</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$280</span>
+                                <span class="price-new">$150</span>
+                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade">
+                                <a href="#">Add To Car</a>
+                            </button>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/5.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Wall Lamp</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$480</span>
+                                <span class="price-new">$400</span>
+                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade">
+                                <a href="#">Add To Car</a>
+                            </button>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/6.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Wall Lamp</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$520</span>
+                                <span class="price-new">$500</span>
+                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade">
+                                <a href="#">Add To Car</a>
+                            </button>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/7.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Stones Bangles</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$360</span>
+                                <span class="price-new">$300</span>
+                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade">
+                                <a href="#">Add To Car</a>
+                            </button>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 购买物品详细介绍区域 -->
+<section class="goods-particular-body">
+    <div class="goods-particular-top">
+        <div class="left">
+            <h3>
+                <a href="#">Sunt In Culpa Qui Officia Deserunt Mollit</a>
+            </h3>
+            <div class="star">
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
+            <div class="left-price">
+                <span class="old-price">$580</span>
+                <span class="new-price">$520</span>
+            </div>
+            <div class="left-introduce">
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+                    ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                    nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+            </div>
+            <div class="left-buy">
+                <button type="button" class="btn btn-default buy">
+                    <a href="#">Add To Car</a>
+                </button>
+            </div>
+            <div class="left-count-down">
+                <ul>
+                    <li class="day">
+                        <p id="days">10</p>
+                        <span>Days</span>
+                    </li>
+                    <li class="hour">
+                        <p id="hours">23</p>
+                        <span>Hours</span>
+                    </li>
+                    <li class="minute">
+                        <p id="minutes">59</p>
+                        <span>Minutes</span>
+                    </li>
+                    <li class="second">
+                        <p id="seconds">60</p>
+                        <span>Seconds</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="goods-particular-bottom">
+                <div class="special-offer"></div>
+                <img src="./public/images/goods/8.jpg" alt="衣服样品">
+            </div>
+        </div>
+    </div>
+    <div class="goods-particular-middle">
+        <div class="top">
+            <img src="./public/images/goods/bg.jpg" alt="衣服样品">
+            <div class="text-contaniner">
+                <h4>45% Offer For</h4>
+                <p>Women & Children's</p>
+            </div>
+        </div>
+        <div class="middle">
+            <h3>Newsletter</h3>
+            <p>Join us now to get all news and special offers.</p>
+            <form action="#" id="email-send">
+                <span class="glyphicon glyphicon-envelope"></span>
+                <input type="text" class="email">
+                <input type="button" value="Join Us" class="buy-shade">
+            </form>
+        </div>
+    </div>
+</section>
+{{ /block }} {{ block "script" }}
+<script src="./public/js/header.js"></script>
+<script src="./public/js/index.js"></script>
+{{ /block }}

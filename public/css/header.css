@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
+    list-style: none;
 }
 
 a,
@@ -14,6 +15,9 @@ a:focus {
 }
 
 /* 最前面的信息 */
+.top {
+    overflow: hidden;
+}
 
 .top>.top-info>.userInfo {
     display: flex;

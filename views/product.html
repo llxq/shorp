@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+{{ extend "./_layouts/home.html" }} 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
+{{ block "head" }}
+<link rel="stylesheet" href="./public/css/header.css">
+<link rel="stylesheet" href="./public/css/footer.css">
+{{ /block }}
 
-<body>
-    {{ include './header.html' }}
-    <div>
-        <h1>这个是product界面</h1>
-    </div>
-</body>
+{{ block "body" }}
 
-</html>
+{{ /block }}
+
+{{ block "script" }}
+<script src="./public/js/header.js"></script>
+{{ /block }}
