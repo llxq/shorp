@@ -14,6 +14,20 @@ a:focus {
     text-decoration: none;
 }
 
+span,
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+}
+
 /* 最前面的信息 */
 
 .top {
@@ -154,7 +168,7 @@ a:focus {
     color: #aaa;
 }
 
-.top>.top-tabbar>.tabbar>ul .dropdown-menu>div>ul> h4 {
+.top>.top-tabbar>.tabbar>ul .dropdown-menu>div>ul>h4 {
     color: #000;
     font-size: 1.5em;
     padding-bottom: 1em;
@@ -206,4 +220,58 @@ a:focus {
 
 .top>.top-tabbar>.shorpcar p a {
     color: brown;
+}
+
+/* breadcrumbs (面包屑导航) */
+.breadcrumbs {
+    width: 100%;
+    height: 5em;
+    background-color: rgba(0, 0, 0, .03);
+    overflow: hidden;
+}
+
+.breadcrumbs > .breadcrumbs-container {
+    max-width: 1200px;
+    margin: auto;
+    line-height: 4em;
+    transform: translate(-1000px);
+    transition: transform 1s ease;
+}
+
+.breadcrumbs > .breadcrumbs-container ul li span {
+    font-size: 1em;
+}
+
+.breadcrumbs > .breadcrumbs-container ul li {
+    float: left;
+    font-size: 1.3em;
+    padding-right: .8em;
+}
+
+.breadcrumbs > .breadcrumbs-container ul li a {
+    color: #d8703f;
+    font-size: 1.2em;
+}
+
+.breadcrumbs > .breadcrumbs-container ul li:nth-child(-n+2) {
+    color: #d8703f;
+}
+
+.breadcrumbs > .breadcrumbs-container ul li:last-child {
+    color: #aaa;
+    position: relative;
+    padding-left: 1em;
+}
+
+.breadcrumbs > .breadcrumbs-container ul li:last-child::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: .8em;
+    border-left: 1px solid #aaa;
+    position: absolute;
+    top: 39%;
+    left: 0;
+    transform-origin: bottom;
+    transform: rotate(20deg)
 }

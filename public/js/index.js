@@ -1,4 +1,10 @@
 $(() => {
+
+    // 判断是否登录
+    
+    if (!localStorage.getItem("isLogin")) {
+        localStorage.setItem("isLogin", "false");
+    }
     let i = 0;
     let p = $(
         ".shorp-body>.shorp-container>.carousel-container>.carousel-text p"

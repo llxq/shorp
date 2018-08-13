@@ -1,0 +1,46 @@
+{{ extend "./_layouts/home.html" }} {{ block "head" }}
+<link rel="stylesheet" href="./public/css/login.css"> {{ /block }} {{ block "body" }} {{ include "./_partials/breadcrumbs.html" }}
+<section class="login-body">
+    <div class="login-container">
+        <div class="login-title">
+            <h2>Login Form</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="login-main">
+            <form>
+                <div class="input-group">
+                    <span class="input-group-addon " id="basic-addon1">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" title="请填写用户名">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">
+                        <span class="glyphicon glyphicon-exclamation-sign"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1" title="请填写密码">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="isCheck">
+                        <label for="isCheck">Forgot Password?</label>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-warning from-group">login</button>
+            </form>
+        </div>
+        <div class="register">
+            <h4>FOR NEW PEOPLE</h4>
+            <p>
+                <a href="/register">Register Here</a>
+                <span> (Or) go back to</span>
+                <a href="/home">Home&nbsp;
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+{{ /block }} {{ block "script" }}
+<script src="./public/js/login.js"></script>
+{{ /block }}

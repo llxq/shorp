@@ -1,0 +1,154 @@
+.register-body {
+    width: 100%;
+    overflow: hidden;
+}
+
+.register-body>.register-container {
+    width: 1200px;
+    margin: auto;
+}
+
+.register-body>.register-container>.register-title {
+    padding: 60px 0;
+    width: 50%;
+    margin: auto;
+    transform: scale(0);
+    transition: transform 1s ease;
+}
+
+.register-body>.register-container>.register-title>h2 {
+    text-align: center;
+    font-size: 3em;
+    position: relative;
+}
+
+.register-body>.register-container>.register-title>h2::before {
+    content: "";
+    display: block;
+    width: 3.5em;
+    height: 0;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    left: 1.5%;
+    top: 50%;
+}
+
+.register-body>.register-container>.register-title>h2::after {
+    content: "";
+    display: block;
+    width: 3.5em;
+    height: 0;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    right: 1.5%;
+    top: 50%;
+}
+
+.register-body>.register-container>.register-title>p {
+    text-align: center;
+    color: #aaa;
+}
+
+.register-body>.register-container>.register-main {
+    width: 40%;
+    margin: auto;
+    padding: 2.5em 3em;
+    background-color: rgba(0, 0, 0, .02);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    /* transform: translateY(1000px);
+    transition: transform 1s ease; */
+}
+.register-body>.register-container>.register-main>form > h5:first-child,
+.register-body>.register-container>.register-main>form .read,
+.register-body>.register-container>.register-main>form .input-group:nth-child(-n+3) {
+   transform: translateY(1000px);
+   transition: transform 1s ease;
+}
+
+.register-body>.register-container>.register-main>form > .login-information,
+.register-body>.register-container>.register-main>form .agree,
+.register-body>.register-container>.register-main>form .input-group:nth-child(n+3),
+.register-body>.register-container>.register-main>form > button,
+.register-body>.register-container>.register-main>form > .go-login
+ {
+    transform: translateY(1000px);
+    transition: transform 1s ease;
+}
+
+.register-body>.register-container>.register-main>form button {
+    width: 100%;
+    border-radius: 0;
+    font-size: 16px;
+    height: 2.5em;
+}
+
+.register-body>.register-container>.register-main .input-group input {
+    height: 3em;
+}
+
+.register-body>.register-container>.register-main .input-group>.input-group-addon {
+    background-color: #fff;
+}
+
+.register-body>.register-container>.register-main .input-group>.input-group-addon>span {
+    color: #d8703f;
+}
+
+.register-body>.register-container>.register-main .input-group {
+    margin-bottom: 1em;
+}
+
+.register-body>.register-container>.register-main h5 {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.register-body>.register-container>.register-main .login-information {
+    padding-top: 2em;
+}
+
+.register-body>.register-container>.register-main .checkbox label {
+    color: #aaa;
+}
+
+.register-body>.register-container>.register-main .go-login {
+    padding: 1.5em 0 0 0;
+}
+
+.register-body>.register-container>.register-main .go-login>span {
+    font-size: 16px;
+}
+
+.register-body>.register-container>.register-main .go-login>span>a {
+    color: #d8703f;
+    padding-left: 1em;
+    font-size: 16px;
+}
+
+.register-body>.register-container>.register-main .go-login>span>a span {
+    padding-left: .5em;
+}
+
+.register-body>.register-container>.go-home {
+    width: 40%;
+    margin: auto;
+    padding: 2em 0 4em 0;
+    text-align: center;
+}
+
+.register-body>.register-container>.go-home>a {
+    width: 7em;
+    border-radius: 0;
+    outline: none;
+    font-size: 16px;
+    background-color: #aaa;
+    color: #fff;
+}
+
+.register-body>.register-container>.go-home>a:hover {
+    background-color: #d8703f;
+}

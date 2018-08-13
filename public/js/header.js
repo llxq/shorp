@@ -1,4 +1,21 @@
 $(() => {
+    let url = location.href.split("/");
+    url = url[url.length - 1].toLowerCase();
+    if (url === "login") {
+        $("#Page-info").html("Login Page");
+    } else if (url === "register") {
+        $("#Page-info").html("Register Page");
+    } else if (url === "product") {
+        $("#Page-info").html("Product Page");
+    } else if (url === "furniture") {
+        $("#Page-info").html("Furniture Page");
+    } else if (url === "phone") {
+        $("#Page-info").html("Phone Page");
+    } else if (url === "contact") {
+        $("#Page-info").html("Contact Page");
+    }
+    // breadcrumbs (面包屑导航)
+    $(".breadcrumbs > .breadcrumbs-container").css("transform", "translate(0)");
 
     // 下拉菜单
     $(".top>.top-tabbar>.tabbar>ul>li").on("mouseover", function () {
