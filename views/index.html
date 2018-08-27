@@ -1,4 +1,4 @@
-{{ extend "./_layouts/home.html" }} {{ block "head" }}
+{{ extend "./_layouts/home.html" }} {{ block "title" }}Home{{ /block }} {{ block "head" }}
 <link rel="stylesheet" href="./public/css/index.css"> {{ /block }} {{ block "body" }}
 <!-- logo区域 -->
 <section class="shorp-body">
@@ -75,7 +75,7 @@
         </div>
         <div class="goods-list">
             <div class="row top">
-                <div class="col-sm-5 col-md-3">
+                <div class="col-sm-5 col-md-3 top-col">
                     <div class="thumbnail">
                         <img src="./public/images/goods/1.jpg" alt="衣服样品">
                         <div class="caption">
@@ -86,19 +86,21 @@
                             <p>
                                 <span class="price-old">$325</span>
                                 <span class="price-new">$250</span>
-                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
                             </p>
                         </div>
                         <div class="goods-shade">
                             <button type="button" class="btn btn-default buy-shade">
-                                <a href="#">Add To Car</a>
+                                <a href="/single">Quick View</a>
                             </button>
                             <div class="star">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
                             </div>
                         </div>
                     </div>
@@ -114,7 +116,9 @@
                             <p>
                                 <span class="price-old">$580</span>
                                 <span class="price-new">$550</span>
-                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
                             </p>
                             <p class="new">
                                 <span>new</span>
@@ -122,19 +126,19 @@
                         </div>
                         <div class="goods-shade">
                             <button type="button" class="btn btn-default buy-shade big">
-                                <a href="#">Add To Car</a>
+                                <a href="/single">Quick View</a>
                             </button>
                             <div class="star big-star">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-5 col-md-3">
+                <div class="col-sm-5 col-md-3 top-col">
                     <div class="thumbnail">
                         <img src="./public/images/goods/3.jpg" alt="衣服样品">
                         <div class="caption">
@@ -145,19 +149,21 @@
                             <p>
                                 <span class="price-old">$180</span>
                                 <span class="price-new">$120</span>
-                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
                             </p>
                         </div>
                         <div class="goods-shade">
                             <button type="button" class="btn btn-default buy-shade">
-                                <a href="#">Add To Car</a>
+                                <a href="/single">Quick View</a>
                             </button>
                             <div class="star">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
                             </div>
                         </div>
                     </div>
@@ -175,19 +181,21 @@
                             <p>
                                 <span class="price-old">$280</span>
                                 <span class="price-new">$150</span>
-                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
                             </p>
                         </div>
                         <div class="goods-shade">
                             <button type="button" class="btn btn-default buy-shade">
-                                <a href="#">Add To Car</a>
+                                <a href="/single">Quick View</a>
                             </button>
                             <div class="star">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
                             </div>
                         </div>
                     </div>
@@ -203,19 +211,21 @@
                             <p>
                                 <span class="price-old">$480</span>
                                 <span class="price-new">$400</span>
-                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
                             </p>
                         </div>
                         <div class="goods-shade">
                             <button type="button" class="btn btn-default buy-shade">
-                                <a href="#">Add To Car</a>
+                                <a href="/single">Quick View</a>
                             </button>
                             <div class="star">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
                             </div>
                         </div>
                     </div>
@@ -231,19 +241,21 @@
                             <p>
                                 <span class="price-old">$520</span>
                                 <span class="price-new">$500</span>
-                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
                             </p>
                         </div>
                         <div class="goods-shade">
                             <button type="button" class="btn btn-default buy-shade">
-                                <a href="#">Add To Car</a>
+                                <a href="/single">Quick View</a>
                             </button>
                             <div class="star">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
                             </div>
                         </div>
                     </div>
@@ -259,19 +271,21 @@
                             <p>
                                 <span class="price-old">$360</span>
                                 <span class="price-new">$300</span>
-                                <button type="button" class="btn btn-default buy">Add To Car</button>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
                             </p>
                         </div>
                         <div class="goods-shade">
                             <button type="button" class="btn btn-default buy-shade">
-                                <a href="#">Add To Car</a>
+                                <a href="/single">Quick View</a>
                             </button>
                             <div class="star">
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
                             </div>
                         </div>
                     </div>
@@ -288,11 +302,11 @@
                 <a href="#">Sunt In Culpa Qui Officia Deserunt Mollit</a>
             </h3>
             <div class="star">
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
             </div>
             <div class="left-price">
                 <span class="old-price">$580</span>
@@ -305,7 +319,7 @@
             </div>
             <div class="left-buy">
                 <button type="button" class="btn btn-default buy">
-                    <a href="#">Add To Car</a>
+                    <a href="/product">Add To Car</a>
                 </button>
             </div>
             <div class="left-count-down">

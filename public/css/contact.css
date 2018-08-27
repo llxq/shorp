@@ -1,0 +1,115 @@
+.mail-us-body>.mail-us-content {
+    max-width: 1350px;
+    margin: auto;
+    padding: 60px 150px;
+}
+.mail-us-body>.mail-us-content>h2,
+.mail-us-body>.mail-us-content>p {
+    transform: scale(0);
+    transition: transform 1s ease;
+}
+.mail-us-body>.mail-us-content>h2 {
+    font-size: 3.5em;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0;
+    position: relative;
+}
+
+.mail-us-body>.mail-us-content>h2::after {
+    content: "";
+    width: 18%;
+    border: .5px solid #ccc;
+    position: absolute;
+    top: 42%;
+    right: 22%;
+}
+.mail-us-body>.mail-us-content>h2::before {
+    content: "";
+    width: 18%;
+    border: .5px solid #ccc;
+    position: absolute;
+    top: 42%;
+    left: 22%;
+}
+.mail-us-body>.mail-us-content>p {
+    text-align: center;
+    color: #999;    
+    width: 65%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.mail-us-body>.mail-us-content>.info{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(1000px);
+    transition: transform 1s ease;
+}
+.mail-us-body>.mail-us-content>.info>.left {
+    width: 67%;
+}
+.mail-us-body>.mail-us-content>.info>.right {
+    width: 30%;
+}
+
+.mail-us-body>.mail-us-content>.info>.left>form .form-group>.form-control {
+    background-color: rgba(0, 0, 0, .04);
+    outline: none !important;
+    box-shadow: 0 0 0 #fff;
+    border-color: #ccc;
+}
+
+.mail-us-body>.mail-us-content>.info>.left>form .form-group:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail-us-body>.mail-us-content>.info>.left>form .form-group:first-child .form-control {
+    width: 48%;
+}
+
+.mail-us-body>.mail-us-content>.info>.left>form .btn {
+    width: 10em;
+    margin: 1em 0;
+    font-size: 18px;
+    outline: none;
+}
+
+.mail-us-body>.mail-us-content>.info>.left>form .btn:active {
+    border-color: #f0ad4e;
+    background-color: #f0ad4e;
+}
+
+.mail-us-body>.mail-us-content>.info>.right>.mail-grid {
+    width: 100%;
+    background-color: #ffc229;
+    height: 95%;
+    text-align: center;
+    padding: 12%;
+    position: relative;
+}
+.mail-us-body>.mail-us-content>.info>.right>.mail-grid>.border {
+    width: 54%;
+    height: 44%;
+    border: 1px dashed #666;
+    position: absolute;
+    top: 7.5%;
+    left: 23.3%;
+    border-radius: 50%;
+}
+
+.mail-us-body>.mail-us-content>.info>.right>.mail-grid>h3 {
+    font-size: 1em;
+    font-weight: 400;
+}
+.mail-us-body>.mail-us-content>.info>.right>.mail-grid>h5 {
+    color: #fff;
+    margin-bottom: 1em;
+}
+.mail-us-body>.mail-us-content>.info>.right>.mail-grid>p {
+    color: #fff;
+}
+.mail-us-body>.mail-us-content>.info>.right>.mail-grid>p>.glyphicon{
+    margin-right: .5em;
+}

@@ -1,0 +1,410 @@
+{{ extend "./_layouts/home.html" }} {{ block "title" }}Single{{ /block }} {{ block "head" }}
+<link rel="stylesheet" href="./public/css/single.css">
+<link rel="stylesheet" href="./public/lib/jquery-ui/jquery-ui.css"> {{ /block }} {{ block "body" }} {{ include "./_partials/breadcrumbs.html" }}
+<section class="single-body">
+    <div class="single-container">
+        <div class="left">
+            <!-- categories -->
+            <div class="categories">
+                <h3>FILTER BY PRICE</h3>
+                <!-- 进度条 -->
+                <div class="silder-container">
+                    <div id="slider"></div>
+                </div>
+                <p class="price">
+                    <span id="min-price">$20000</span>&nbsp;-&nbsp;
+                    <span id="max-price">$80000</span>
+                </p>
+                <!-- 分类 -->
+                <div class="categories-body">
+                    <div class="categories-title">
+                        <h3>CATEGORIES</h3>
+                    </div>
+                    <div class="categories-content">
+                        <ul>
+                            <li>
+                                <a href="#">Best Selling</a>
+                                <span>(15)</span>
+                            </li>
+                            <li>
+                                <a href="#">Home Collection</a>
+                                <span>(16)</span>
+                            </li>
+                            <ul>
+                                <li>
+                                    <a href="#">Cookware</a>
+                                    <span>(2)</span>
+                                </li>
+                                <li>
+                                    <a href="#">New Arrivals</a>
+                                    <span>(0)</span>
+                                </li>
+                                <li>
+                                    <a href="#">Home Decore</a>
+                                    <span>(1)</span>
+                                </li>
+                            </ul>
+                            <li>
+                                <a href="#">Decorations</a>
+                                <span>(15)</span>
+                            </li>
+                            <ul>
+                                <li>
+                                    <a href="#">Wall Clock</a>
+                                    <span>(2)</span>
+                                </li>
+                                <li>
+                                    <a href="#">New Arrivals</a>
+                                    <span>(0)</span>
+                                </li>
+                                <li>
+                                    <a href="#">Lighting</a>
+                                    <span>(1)</span>
+                                </li>
+                                <li>
+                                    <a href="#">Top Brands</a>
+                                    <span>(0)</span>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="img">
+                <a href="#">
+                    <img src="./public/images/single/1.jpg" alt="衣服样品">
+                </a>
+                <div class="info">
+                    <h3>SUMMER COLLECTION</h3>
+                    <h4>
+                        <span>55%</span> FLAT DISCOUNT</h4>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="show-goods">
+                <div class="left">
+                    <div class="big-img">
+                        <img src="./public/images/single/2.jpg" alt="衣服样品">
+                        <img src="./public/images/single/3.jpg" alt="衣服样品">
+                        <img src="./public/images/single/4.jpg" alt="衣服样品">
+                    </div>
+                    <div class="small-img">
+                        <img src="./public/images/single/2.jpg" alt="衣服样品">
+                        <img src="./public/images/single/3.jpg" alt="衣服样品">
+                        <img src="./public/images/single/4.jpg" alt="衣服样品">
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>Men's Solid Casual Shirt</h3>
+                    <p>$550&nbsp;-&nbsp;$900</p>
+                    <div class="star">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </div>
+                    <h4>
+                        <i>Description</i>
+                    </h4>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident.</p>
+                    <p>
+                        <span>COLOR：</span>
+                        <span>QUALITY：</span>
+                    </p>
+                    <div class="style">
+                        <div class="left">
+                            <div class="red">
+                                <div class="box"></div>
+                                <span>Red</span>
+                            </div>
+                            <div class="yellow">
+                                <div class="box"></div>
+                                <span>Yellow</span>
+                            </div>
+                            <div class="purple">
+                                <div class="box"></div>
+                                <span>Purple</span>
+                            </div>
+                            <div class="violet">
+                                <div class="box"></div>
+                                <span>Violet</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <select>
+                                <option>5&nbsp;Qty</option>
+                                <option>6&nbsp;Qty</option>
+                                <option>7&nbsp;Qty</option>
+                                <option>10&nbsp;Qty</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h5>OCCASION：</h5>
+                    <div class="occasional">
+                        <dic class="color">
+                            <label class="radio">
+                                <input type="radio" name="color">
+                                <i class="radio-change"></i>
+                                Casual Wear
+                            </label>
+                        </dic>
+                        <div class="color">
+                            <label class="radio">
+                                <input type="radio" name="color">
+                                <i></i>
+                                Party Wear
+                            </label>
+                        </div>
+                        <div class="color">
+                            <label class="radio">
+                                <input type="radio" name="color">
+                                <i></i>
+                                Formal Wear
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-default buy">
+                        <a href="/product">Add To Car</a>
+                    </button>
+                </div>
+            </div>
+            <div class="goods-nav-tabs">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" id="mytabs">
+                    <li role="presentation" class="active">
+                        <a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">Reviews(2)</a>
+                    </li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" aria-controls="information" aria-expanded="true" data-toggle="dropdown" id="myTabDrop">Information
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="myTabDrop" id="information">
+                            <li>
+                                <a href="#cleanse" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="cleanse">cleanse</a>
+                            </li>
+                            <li>
+                                <a href="#fanny" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="fanny">fanny</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="description">
+                        <h3>PRODUCT BRIEF DESCRIPTION</h3>
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                            retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                            butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson
+                            ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                            butcher voluptate nisi qui.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                            id est laborum.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="reviews">
+                        <div class="introduce-info">
+                            <div class="left">
+                                <img src="/public/images/single/tx1.png" alt="头像" class="img-circle">
+                            </div>
+                            <div class="right">
+                                <h4>
+                                    <a href="#">ADMIN</a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-share"></span> REPLY</a>
+                                </h4>
+                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                                    nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit. </p>
+                            </div>
+                        </div>
+                        <div class="introduce-info">
+                            <div class="left">
+                                <img src="/public/images/single/tx2.png" alt="头像" class="img-circle">
+                            </div>
+                            <div class="right">
+                                <h4>
+                                    <a href="#">ADMIN</a>
+                                    <a href="#">
+                                        <span class="glyphicon glyphicon-share"></span> REPLY</a>
+                                </h4>
+                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                                    nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit. </p>
+                            </div>
+                        </div>
+                        <div class="add-review">
+                            <h4>ADD A REVIEW</h4>
+                            <form role="form">
+                                <div class="form-group form-inline">
+                                    <input type="text" class="form-control" id="review-name" placeholder="Name">
+                                    <input type="email" class="form-control" id="review-email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="review-subject" placeholder="Subject">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="10" placeholder="Message" id="review-message"></textarea>
+                                </div>
+                                <button class="btn btn-warning">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane " id="cleanse">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
+                            fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer,
+                            iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                            Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles
+                            pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard
+                            of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane " id="fanny">
+                        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+                            cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art
+                            party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh
+                            mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache
+                            readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh
+                            echo park vegan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="related-product-body">
+    <div class="related-product-content">
+        <h2>Related Products</h2>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="product-content">
+            <div class="row">
+                <div class="col-sm-5 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/1.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Running Shoes</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$280</span>
+                                <span class="price-new">$150</span>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade">
+                                <a href="/single">Quick View</a>
+                            </button>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/5.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Running Shoes</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$280</span>
+                                <span class="price-new">$150</span>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade">
+                                <a href="/single">Quick View</a>
+                            </button>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/3.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Running Shoes</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$280</span>
+                                <span class="price-new">$150</span>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade">
+                                <a href="/single">Quick View</a>
+                            </button>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-3">
+                    <div class="thumbnail">
+                        <img src="./public/images/goods/4.jpg" alt="衣服样品">
+                        <div class="caption">
+                            <h4>
+                                <a href="#">Running Shoes</a>
+                            </h4>
+                            <p>Vel illum qui dolorem eum fugiat</p>
+                            <p>
+                                <span class="price-old">$280</span>
+                                <span class="price-new">$150</span>
+                                <button type="button" class="btn btn-default buy">
+                                    <a href="/product">Add To Car</a>
+                                </button>
+                            </p>
+                        </div>
+                        <div class="goods-shade">
+                            <button type="button" class="btn btn-default buy-shade">
+                                <a href="/single">Quick View</a>
+                            </button>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ /block }} {{ block "script" }}
+<script src="./public/js/single.js"></script>
+<script src="./public/lib/jquery-ui/jquery-ui.js"></script>
+{{ /block }}

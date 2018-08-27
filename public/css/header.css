@@ -210,19 +210,23 @@ h6 {
 }
 
 .top>.top-tabbar>.shorpcar {
-    color: brown;
     padding: 20px 0 0 0;
+}
+
+.top>.top-tabbar>.shorpcar>a {
+    color: brown;
 }
 
 .top>.top-tabbar>.shorpcar p {
     text-align: center;
 }
 
-.top>.top-tabbar>.shorpcar p a {
+.top>.top-tabbar>.shorpcar p>a {
     color: brown;
 }
 
 /* breadcrumbs (面包屑导航) */
+
 .breadcrumbs {
     width: 100%;
     height: 5em;
@@ -230,7 +234,7 @@ h6 {
     overflow: hidden;
 }
 
-.breadcrumbs > .breadcrumbs-container {
+.breadcrumbs>.breadcrumbs-container {
     max-width: 1200px;
     margin: auto;
     line-height: 4em;
@@ -238,32 +242,32 @@ h6 {
     transition: transform 1s ease;
 }
 
-.breadcrumbs > .breadcrumbs-container ul li span {
+.breadcrumbs>.breadcrumbs-container ul li span {
     font-size: 1em;
 }
 
-.breadcrumbs > .breadcrumbs-container ul li {
+.breadcrumbs>.breadcrumbs-container ul li {
     float: left;
     font-size: 1.3em;
     padding-right: .8em;
 }
 
-.breadcrumbs > .breadcrumbs-container ul li a {
+.breadcrumbs>.breadcrumbs-container ul li a {
     color: #d8703f;
     font-size: 1.2em;
 }
 
-.breadcrumbs > .breadcrumbs-container ul li:nth-child(-n+2) {
+.breadcrumbs>.breadcrumbs-container ul li:nth-child(-n+2) {
     color: #d8703f;
 }
 
-.breadcrumbs > .breadcrumbs-container ul li:last-child {
+.breadcrumbs>.breadcrumbs-container ul li:last-child {
     color: #aaa;
     position: relative;
     padding-left: 1em;
 }
 
-.breadcrumbs > .breadcrumbs-container ul li:last-child::after {
+.breadcrumbs>.breadcrumbs-container ul li:last-child::after {
     content: "";
     display: block;
     width: 0;

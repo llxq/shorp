@@ -13,6 +13,10 @@ $(() => {
         $("#Page-info").html("Phone Page");
     } else if (url === "contact") {
         $("#Page-info").html("Contact Page");
+    } else if (url === "single") {
+        $("#Page-info").html("Single Page");
+    } else if (url === "shorpcar") {
+        $("#Page-info").html("ShorpCar Page");
     }
     // breadcrumbs (面包屑导航)
     $(".breadcrumbs > .breadcrumbs-container").css("transform", "translate(0)");

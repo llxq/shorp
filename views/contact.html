@@ -1,0 +1,40 @@
+{{ extend "./_layouts/home.html" }} {{ block "title" }}Mail Us{{ /block }} {{ block "head" }}
+<link rel="stylesheet" href="./public/css/contact.css">
+<link rel="stylesheet" href="./public/lib/jquery-ui/jquery-ui.css"> {{ /block }} {{ block "body" }} {{ include "./_partials/breadcrumbs.html" }}
+<section class="mail-us-body">
+    <div class="mail-us-content">
+        <h2>Mail Us</h2>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <div class="info">
+            <div class="left">
+                <form role="form">
+                    <div class="form-group form-inline">
+                        <input type="text" class="form-control" id="review-name" placeholder="Name">
+                        <input type="email" class="form-control" id="review-email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="review-subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="10" placeholder="Message" id="review-message"></textarea>
+                    </div>
+                    <button class="btn btn-warning">Submit Now</button>
+                </form>
+            </div>
+            <div class="right">
+                <div class="mail-grid">
+                    <img src="./public/images/Manager.png" alt="Manager" class="img-circle">
+                    <div class="border"></div>
+                    <h3>RITA WILLIUMSON</h3>
+                    <h5>Manager</h5>
+                    <p>
+                        <span class="glyphicon glyphicon-envelope"></span> Phone：+1234 456 789</p>
+                    <p><span class="glyphicon glyphicon-earphone"></span> Email：info@132.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ /block }} {{ block "script" }}
+<script src="./public/js/contact.js"></script>
+{{ /block }}

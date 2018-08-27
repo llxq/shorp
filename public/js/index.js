@@ -1,7 +1,7 @@
 $(() => {
 
     // 判断是否登录
-    
+
     if (!localStorage.getItem("isLogin")) {
         localStorage.setItem("isLogin", "false");
     }
@@ -41,6 +41,7 @@ $(() => {
             });
     });
 
+    // logo 轮播图标识
     function carouselRun() {
         return setInterval(function () {
             i++;
@@ -139,15 +140,13 @@ $(() => {
         if (comprareTop($(".goods-particular-body>.goods-particular-middle > .middle").offset().top - 1100)) {
             $(".goods-particular-body>.goods-particular-middle > .middle").css("transform", "translateY(0)")
         }
-        
+
 
 
     })
 
     // 衣服样品遮罩
-    $(
-            ".goods-show-body > .goods-list-container > .goods-list > .row .thumbnail .goods-shade"
-        )
+    $(".goods-show-body > .goods-list-container > .goods-list > .row .thumbnail .goods-shade")
         .on("mouseover", function () {
             $(this).css({
                 opacity: "1"
